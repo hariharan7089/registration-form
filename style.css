@@ -99,15 +99,16 @@ button{
  border: none;
 }
 @media screen and (max-width:480px) {
-    .section{
+  .section{
         flex-direction: column;
     }
     .gender{
         flex-direction: column;
     }
     body{
-        height: 800px;
+        background-color: rgb(121, 24, 207);
     }
+   
     main{
         background: none;
         margin-top: 10px;
@@ -120,5 +121,12 @@ button{
     }
     button{
         margin-left: 60px;
+    }
+    main{
+        height: 100%;
+        box-shadow: none;
+    }
+    h1{
+        color: aliceblue;
     }
 }
