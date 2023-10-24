@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register form</title>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Vault Of Codes</h1>
+        </header>
+        <main>
+            <div class="main">
+                <form action="" id="form">
+                    <h2>Register</h2>
+                    <div class="section">
+                        <div>
+                            <label for="firstname">First Name:</label><br />
+                            <input type="text" required  autofocus id="place"><br />
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name:</label><br />
+                            <input type="text"  id="place"><br />
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div>
+                            <label for="Email">Email Address:</label><br />
+                            <input type="email" required id="place"><br />
+                        </div>
+                        <div>
+                            <label for="dob">Date Of Birth:</label><br />
+                            <input type="date" id="place" class="date"><br />
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div>
+                            <label for="password">Password:</label><br />
+                            <input type="password" placeholder="Atleast 8 digits" id="password" required /><br />
+                            <p class="password-strength-indicator" id="password-strength"></p>
+                        </div>
+                        <div>
+                            <label for="confirm">Confirm Password:</label><br />
+                            <input type="password" id="confirm-password"
+                                required /><br />
+                            <p class="confirm-password-strength" id="confirm-password-strength"></p>
+
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <div>
+                            <label for="gender">Gender:</label>
+                            <select name="gender" id="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                    <button type="submit" id="submit">Submit</button>
+
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
