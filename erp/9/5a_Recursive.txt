@@ -1,0 +1,15 @@
+CREATE OR REPLACE FUNCTION factorial (
+    n NUMBER
+) RETURN NUMBER IS
+BEGIN
+    IF n <= 1 THEN
+        RETURN 1;
+    ELSE
+        RETURN n * factorial(n - 1);
+    END IF;
+END;
+/
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Factorial of 3 is ' || factorial(3));
+END;
+/

@@ -1,0 +1,16 @@
+CREATE OR REPLACE PROCEDURE calc_square (
+    p_value IN NUMBER,
+    p_square OUT NUMBER
+) AS
+BEGIN
+    p_square := p_value * p_value;
+END;
+/
+DECLARE
+    square NUMBER;
+    num NUMBER := 5;
+BEGIN
+    calc_square(num, square);
+    DBMS_OUTPUT.PUT_LINE('The square of ' || num || '  is ' || square);
+END;
+/

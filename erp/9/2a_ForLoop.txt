@@ -1,0 +1,7 @@
+DECLARE i NUMBER;
+BEGIN
+	FOR i IN 1..10 LOOP
+		DBMS_OUTPUT.PUT_LINE('For Loop: ' || i);
+	END LOOP;
+END;
+/
